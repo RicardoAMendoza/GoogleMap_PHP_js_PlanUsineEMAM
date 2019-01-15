@@ -31,7 +31,7 @@ Cartographie de l'atelier, permettre la commande de matériel, compléter le sui
 
  * Frame : Embarcadero® RadPHP™ XE2 Version  4.0.0.1547 Copyright © Embarcadero Technologies, Inc. All Rights Reserved.
  * [Installer MySQL Workbench](https://www.mysql.com/fr/products/workbench/)
- * [Télécharger MapZoom.js, (c) by Christian Effenberger.](http://www.netzgesta.de/mapzoom/)
+ * [Télécharger MapZoom.js, (c) by Christian Effenberger. All Rights Reserved.](http://www.netzgesta.de/mapzoom/)
 
  
 ### Créer la base de données avec MySQL Workbench.
@@ -92,7 +92,7 @@ Back-end:
  * Javascript
  * jquery
  * PHP
- * SQL
+ * MySQL
 
 
 ## Versions et gestionnaire de source 
@@ -102,7 +102,7 @@ https://gitlab.com/AndyDelRisco/PlanUsineEMAM.git
 
 et
 
-https://github.com/RicardoAMendoza/prjPHP_PlanUsineEMAM_Rm
+https://github.com/RicardoAMendoza/GoogleMap_PHP_js_PlanUsineEMAM
 
 Historique de versions : 
 https://gitlab.com/AndyDelRisco/PlanUsineEMAM/commits/master
