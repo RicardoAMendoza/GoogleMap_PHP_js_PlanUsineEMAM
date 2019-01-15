@@ -65,6 +65,8 @@ Avec le zoom on peut identifier chaque équipe et marcher dans l'atelier.
 
 ![Zoom sur la cartographie](/img/planzoomemam.jpg "View")
 
+![](/img/zoomatelier.gif "View")
+
 
 ### Click sur une machine.
 
