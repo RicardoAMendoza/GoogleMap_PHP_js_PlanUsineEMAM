@@ -1,0 +1,4 @@
+23 agosto 2018
+- fncCleanModal() - la funcion no llena los valores
+- static in modal - se agrego la linea de codigo pero no dio resultado
+- integrar maquinas 100 al grid
