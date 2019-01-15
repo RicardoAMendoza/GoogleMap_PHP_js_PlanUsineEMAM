@@ -32,6 +32,11 @@ Cartographie de l'atelier, permettre la commande de matériel, compléter le sui
  * Frame : Embarcadero® RadPHP™ XE2 Version  4.0.0.1547 Copyright © Embarcadero Technologies, Inc. All Rights Reserved.
  * [Installer MySQL Workbench](https://www.mysql.com/fr/products/workbench/)
  * [Télécharger MapZoom.js, (c) by Christian Effenberger. All Rights Reserved.](http://www.netzgesta.de/mapzoom/)
+ 
+ 
+ ### GIF
+ 
+ * [Capture d'écran animée](https://www.cockos.com/licecap/)
 
  
 ### Créer la base de données avec MySQL Workbench.
@@ -52,6 +57,7 @@ Cartographie de l'atelier, permettre la commande de matériel, compléter le sui
 
 ## Exécuter le test
 
+
 ### Cartographie de l'atelier
 
 Nous pouvons visualiser tout l'usine de l'EMAM.
@@ -65,17 +71,19 @@ Avec le zoom on peut identifier chaque équipe et marcher dans l'atelier.
 
 ![Zoom sur la cartographie](/img/planzoomemam.jpg "View")
 
-Avec le zoom on peut identifier chaque équipe et marcher dans l'atelier.
-
-![Zoom sur la cartographie](/img/planzoomemamGIF.gif "View")
-
-
 
 ### Click sur une machine.
 
 On click sur une machine pour appeler un modal avec tous ses informations.
 
 ![Modal avec les informations](/img/planmodalemam.jpg "View")
+
+
+### Utilization de l'application.
+
+L'application localise l'équipement comme une carte google.
+
+![Zoom sur la cartographie](/img/utilizationGIF.gif "View")
 
 
 ## Technologies utilisées :
@@ -128,5 +136,3 @@ Ce projet utilise les licences suivantes:
 * [Christian Effenberger](http://www.netzgesta.de/mapzoom/)
 * [École des métiers de l'aérospatiale de Montréal](http://ecole-metiers-aerospatiale.csdm.ca/)
 * [Institut Teccart](http://www.teccart.qc.ca/)
-
-
