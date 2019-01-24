@@ -51,6 +51,7 @@ Cartographie de l'atelier, permettre la commande de matériel, compléter le sui
  
 ## Auteurs
 
+* **[Andy Del Risco](https://www.linkedin.com/in/andydelriscomanzanares/)**
 * **Andy Del Risco Manzanares** - *Analyste programmeur senior* 
 * **Ricardo Mendoza** - *Analyste Programmeur Jr* 
 
