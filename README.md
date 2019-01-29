@@ -58,6 +58,13 @@ Cartographie de l'atelier, permettre la commande de matériel, compléter le sui
 ## Exécuter le test
 
 
+### Utilization de l'application.
+
+L'application localise l'équipement comme une carte google.
+
+![Zoom sur la cartographie](/img/utilizationGIF.gif "View")
+
+
 ### Cartographie de l'atelier
 
 Nous pouvons visualiser tout l'usine de l'EMAM.
@@ -79,13 +86,6 @@ On click sur une machine pour appeler un modal avec tous ses informations.
 ![Modal avec les informations](/img/planmodalemam.jpg "View")
 
 
-### Utilization de l'application.
-
-L'application localise l'équipement comme une carte google.
-
-![Zoom sur la cartographie](/img/utilizationGIF.gif "View")
-
-
 ## Technologies utilisées :
 
  * Frame : Embarcadero® RadPHP™ XE2 Version  4.0.0.1547 Copyright © Embarcadero Technologies, Inc. All Rights Reserved.
@@ -96,7 +96,7 @@ Front-end:
  * CSS
  * HTML5
  * Javascript
- * jquery
+ * Jquery
  * PHP
  * MySQL
  * mapzoom.js 1.4 (27-Sep-2012) (c) by Christian Effenberger. All Rights Reserved.
@@ -105,7 +105,7 @@ Back-end:
  * Javascript
  * jquery
  * PHP
- * MySQL
+ * MySQL Workbench 6.3
 
 
 ## Versions et gestionnaire de source 
