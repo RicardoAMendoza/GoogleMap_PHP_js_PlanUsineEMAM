@@ -1,4 +1,12 @@
 <?php
+/*!
+ * PlanUsineEMAM, PHP and jQuery
+ * Version 0.1
+ * Original author: Andy DEl Risco & Ricardo Mendoza
+ * Released with the MIT License: http://www.opensource.org/licenses/mit-license.php
+ * Copyright (c) 2018 Andy DEl Risco and Ricardo Mendoza
+ * summer 2018
+ */
 require_once('datainv.php');
 ?>
 <!DOCTYPE html>
@@ -31,7 +39,7 @@ require_once('datainv.php');
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 	    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-	    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css"></script>
+	    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
 	    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
 	    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-en-US.min.js"></script>
 	    <script src="//rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
@@ -49,27 +57,28 @@ require_once('datainv.php');
 		<!--===============================================================================================-->
         <!-- Script -->
 	    <script src="javascripts/infoScript.js"></script>
-        <!-- Css -->
-	    <link rel="stylesheet" href="css/table.css" type="text/css"/>
-	    <link rel="stylesheet" href="css/planstyle.css" type="text/css"/>
+        <!-- CSS -->
+	    <link rel="stylesheet" type="text/css" href="css/table.css" />
+	    <link rel="stylesheet" type="text/css" href="css/planstyle.css" />
+		<!-- CSS Description des machines -->
 		<link rel="stylesheet" type="text/css" href="css/cvi_tip.css" />
 	</head>
 	<body>
         <div id="demo" class="inlet"><hr style="visibility:hidden;"/>
 	        <div id="wrapper" unselectable="on">
 				<div id="mapper" unselectable="on">
-				    <!-- Upload tue map in to Mapzoom -->
+				<!-- Telecharger map -->
 					<img onLoad="mapzoom.add(this);" id="usine" class="mapzoom"  src="img/PLANS-EMAM.jpg" width="1500" height="825" alt="" border="0" usemap="#usine_map" />
-                    <!-- Button zoom in button zoom out -->
+                    <!-- Buttons zoom out, zoom in dans le map -->
 					<button type="button" onclick="mapzoom.set($('img'),'zoomin',true);"> + </button>
 					<button type="button" onclick="mapzoom.set($('img'),'zoomout',true);"> - </button>
 					<script type="text/javascript">
-						mapzoom.add(document.getElementById('img')); // Makes zoom behaviour in the map
+						mapzoom.add(document.getElementById('img')); // Gives the zoom behaviour
 						mapzoom.defaultWheelinvert= false; //BOOLEAN makes zoom behaviour identical with Google Maps
 					</script>
 				</div>
 			</div>
-			    <!-- The <map> tag is used to define a client-side image-map. An image-map is an image with clickable areas -->
+			    <!-- The <map> tag is used to define a client-side image-map. An image-map is an image with clickable areas. -->
 				<map name="usine_map">
 				    <?php
 				    global $DataInv;
@@ -78,9 +87,12 @@ require_once('datainv.php');
 				    while( ! $DataInv->Qry->EOF)
 				    {
 					?>
-					<!-- Machine Description -->
+					                                                           <!-- Description des machines avec la souris dessus-->                                                                                                                                                                                      
 					<area shape= "<?php echo $DataInv->Qry->shape ?>" tooltip="<b><?php echo $DataInv->Qry->local ?></b><br/><small><i><?php echo $DataInv->Qry->poste ?> - <?php echo $DataInv->Qry->Marque ?> - <?php echo $DataInv->Qry->modele ?></i></small>"  coords= "<?php echo $DataInv->Qry->coords?>" alt="mac" href="javascript:visualiser('<?php echo $DataInv->Qry->noserie ?>')">
-					                                                                                                                                                                                                                                                                    <!-- The href attribute specifies the link's destination, link Javascript to a function visualiser() -->
+					                                                                                                                                                                                                                                                                                                       <!-- Notacion que hace llamado a una funcion de tipo javascript,
+                                                                                                                                                                                                                                                                                                                                Link to a JavaScript:																																																																														   
+																																																																														        The href attribute specifies the link's destination: 
+																																																																																visualiser() function that shows the attribites for each machine with a click -->
 						<?php
 						   $DataInv->Qry->Next();
 					}
