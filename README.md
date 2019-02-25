@@ -58,6 +58,29 @@ Cartographie de l'atelier, permettre la commande de matériel, compléter le sui
 ## Exécuter le test
 
 
+### Principales barrières.
+
+
+### Dans Plan.PHP
+
+#### Mapzoom.js : Telecharger l'img dans Mapzoom.
+
+Upload tue map in to Mapzoom
+<img onLoad="mapzoom.add(this);" id="usine" class="mapzoom"  src="img/PLANS-EMAM.jpg" width="1500" height="825" alt="" border="0" usemap="#usine_map" />
+
+
+#### Map Tab
+The <map> tag is used to define a client-side image-map. An image-map is an image with clickable areas -->
+<map name="usine_map"></map>
+
+
+#### Visualiser
+
+href="javascript:visualiser('<?php echo $DataInv->Qry->noserie ?>')"
+The href attribute specifies the link's destination, link Javascript to a function visualiser() dans javascripts/infoScript.js
+[visualiser()](https://github.com/RicardoAMendoza/GoogleMap_PHP_js_PlanUsineEMAM/blob/master/javascripts/infoScript.js)
+
+
 ### Utilization de l'application.
 
 L'application localise l'équipement comme une carte google.
